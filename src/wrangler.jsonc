@@ -1,5 +1,6 @@
 {
-    "name": "baylang_ai",
+    "$schema": "node_modules/wrangler/config-schema.json",
+    "name": "baylang-ai",
     "compatibility_date": "2026-09-15",
     "main": "main.py",
     "compatibility_flags":

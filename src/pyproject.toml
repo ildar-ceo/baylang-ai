@@ -5,3 +5,9 @@ description = "BayLang AI"
 requires-python = ">=3.12"
 dependencies = [
 ]
+
+[dependency-groups]
+dev = [
+    "workers-py",
+    "workers-runtime-sdk"
+]

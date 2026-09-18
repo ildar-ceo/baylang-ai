@@ -17,8 +17,15 @@ case $1 in
             pywrangler dev --ip 0.0.0.0 --port 8787
     ;;
     
+    deploy)
+        docker run -it --rm \
+            -v ./src:/app \
+            $IMAGE_NAME:$VERSION \
+            pywrangler deploy
+    ;;
+    
     *)
-        echo "$0 {docker|browse}"
+        echo "$0 {docker|deploy|browse}"
     ;;
     
 esac
