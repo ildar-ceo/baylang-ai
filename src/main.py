@@ -1,4 +1,6 @@
-from workers import WorkerEntrypoint, Response
+from workers_runtime_sdk import WorkerEntrypoint
+from js import Response
+
 
 class Default(WorkerEntrypoint):
     async def fetch(self, request):
@@ -8,4 +10,4 @@ class Default(WorkerEntrypoint):
         </body>"""
 
         headers = {"content-type": "text/html;charset=UTF-8"}
-        return Response(html, headers=headers)
+        return Response.new(html, headers=headers)
