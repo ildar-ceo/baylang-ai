@@ -20,6 +20,7 @@ case $1 in
     deploy)
         docker run -it --rm \
             -v ./src:/app \
+            --env-file .env \
             $IMAGE_NAME:$VERSION \
             pywrangler deploy
     ;;
