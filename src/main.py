@@ -1,5 +1,4 @@
-from workers_runtime_sdk import WorkerEntrypoint
-from js import Response
+from workers import WorkerEntrypoint, Response
 
 
 class Default(WorkerEntrypoint):
