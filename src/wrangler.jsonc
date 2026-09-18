@@ -1,0 +1,10 @@
+{
+    "name": "baylang_ai",
+    "compatibility_date": "2026-09-15",
+    "main": "main.py",
+    "compatibility_flags":
+    [
+        // Required for Python Workers
+		"python_workers"
+	]
+}
